@@ -17,4 +17,14 @@ INSERT INTO `pessoas` VALUES (1,'Cynde Alesbrook','F'),(2,'Vinson Jiroutka','M')
 ## Configuração da ConnectionString em 'application.properties' 
 
 ## Classe Pessoa criada na pasta Entity
+<li>Setar as notações que mapeam a entidade com a tabela do banco de dados
 
+## Para que o springboot gere automaticamente as rotas REST, deve-se instalar a dependência 'Rest Repositories'. 
+
+### E então criar um repositório para a entidade que extends JpaRepository<'NomeDaEntidade', 'tipoDoId'> {} 
+
+### Para que isso funcione, é preciso setar a notação @RepositoryRestResource no Repositório.
+
+## Para acessar os métodos REST da Entidade, basta colocar /'nomeDaTabela' depois da porta e fazer os testes no Postman.
+
+## A api está funcionando. O proximo passo é personalizar os resultados de erro e sucesso.
